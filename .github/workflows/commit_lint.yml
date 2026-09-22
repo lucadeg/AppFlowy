@@ -1,6 +1,8 @@
-name: Commit messages lint
-on: [pull_request, push]
 
+name: Commit messages lint
+on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   commitlint:
     runs-on: ubuntu-latest

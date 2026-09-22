@@ -1,10 +1,8 @@
+
 name: Translation Notify
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - "frontend/appflowy_flutter/assets/translations/en.json"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   Discord-Notify:
     runs-on: ubuntu-latest

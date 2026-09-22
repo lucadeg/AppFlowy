@@ -1,21 +1,9 @@
+
 name: Rust-CI
 
 on:
-  push:
-    branches:
-      - "main"
-      - "develop"
-      - "release/*"
-    paths:
-      - "frontend/rust-lib/**"
-      - ".github/workflows/rust_ci.yaml"
-
-  pull_request:
-    branches:
-      - "main"
-      - "develop"
-      - "release/*"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 env:
   CARGO_TERM_COLOR: always
   CLOUD_VERSION: 0.9.49-amd64
